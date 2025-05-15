@@ -89,10 +89,14 @@ main {
 }
 
 main h1 {
-    font-size: 40px;
+    font-size: 23px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
     font-weight: 400;
     margin-bottom:30px;
     color: #000;
+    text-align: left;
 }
 
 #libraryImage {
@@ -104,8 +108,80 @@ main h1 {
 }
 
 main p {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     letter-spacing: 1px;
-    word-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+
+
+article {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+article h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+article .blogPost {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 50px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+}
+
+article .blogPost #abt {
+    display: flex;
+    gap: 15px;
+}
+
+article .blogPost h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+article .blogPost .img {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(105, 105, 216);
+    border-radius: 50%;
+}
+
+
+#btn {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(105, 105, 216);
+    outline: none;
+    border: none;
+
+    margin-top: 20px;
+}
+
+
+#btn:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transform: scale(110%);
+    transition: all 0.3s ease-in-out;
 }
